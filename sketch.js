@@ -20,7 +20,7 @@ function draw() {
   stroke(random(50,70), 100, 100);
   line(0, y, width, y);
 
-  y += random(-10, 10);
+  y += random(-10, 12);
    if (y > height){
      y = 0;
    }
