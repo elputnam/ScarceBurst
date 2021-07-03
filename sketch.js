@@ -1,5 +1,5 @@
 let particles = [];
-let x = 0; 
+let y = 0; 
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -18,15 +18,15 @@ function draw() {
     }
   }
   stroke(random(50,70), 100, 100);
-  line(x, 0, x, height);
+  line(0, y, width, y);
 
-  x += random(-10, 10);
-   if (x > width){
-     x = 0;
+  y += random(-10, 10);
+   if (y > height){
+     y = 0;
    }
 
-   if (x < 0){
-     x = width;
+   if (y < 0){
+     y = height;
    }
   /*
   for (let i = 0; i < height*.0001; i++){
