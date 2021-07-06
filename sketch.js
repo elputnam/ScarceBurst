@@ -28,14 +28,6 @@ function draw() {
    if (y < 0){
      y = height;
    }
-  /*
-  for (let i = 0; i < height*.0001; i++){
-    stroke(0);
-    fill(random(30,70), 100, 100, 50)
-    rectMode(CENTER);
-    square(random(width), random(height), random(10));
-  }
-  */
 }
 
 class Element {
@@ -55,7 +47,7 @@ class Element {
   update(){
     this.vel.add(this.accel);
     this.loc.add(this.vel);
-    this.lifespan -= random(2);
+    this.lifespan -= random(1,2);
     this.H1 += 1;
   }
 
